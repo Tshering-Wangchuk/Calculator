@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotationX="2"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="504dp"
+                        android:layout_height="match_parent"
+                        android:rotation="0"
+                        android:rotationX="0"
+                        android:rotationY="0">
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <EditText
+                            android:id="@+id/Number1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="85dp"
+                            android:layout_marginTop="44dp"
+                            android:layout_marginEnd="210dp"
+                            android:layout_marginBottom="514dp"
+                            android:ems="10"
+                            android:hint="Number 1"
+                            android:inputType="number"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/Number2"
+                            android:layout_width="209dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="84dp"
+                            android:layout_marginEnd="211dp"
+                            android:layout_marginBottom="12dp"
+                            android:ems="10"
+                            android:hint="Number 2"
+                            android:inputType="number"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.186" />
+
+                        <TextView
+                            android:id="@+id/result"
+                            android:layout_width="229dp"
+                            android:layout_height="39dp"
+                            android:layout_marginStart="91dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="184dp"
+                            android:layout_marginBottom="1dp"
+                            android:hint="Result"
+                            android:text="TextView"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toTopOf="@+id/add"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+                        <Button
+                            android:id="@+id/add"
+                            android:layout_width="305dp"
+                            android:layout_height="51dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="139dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Add"
+                            app:layout_constraintBottom_toTopOf="@+id/subtract"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/result" />
+
+                        <Button
+                            android:id="@+id/subtract"
+                            android:layout_width="305dp"
+                            android:layout_height="51dp"
+                            android:layout_marginStart="53dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="146dp"
+                            android:layout_marginBottom="18dp"
+                            android:text="Subtract"
+                            app:layout_constraintBottom_toTopOf="@+id/multiply"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/add" />
+
+                        <Button
+                            android:id="@+id/divide"
+                            android:layout_width="301dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="56dp"
+                            android:layout_marginEnd="147dp"
+                            android:text="Divide"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.703" />
+
+                        <Button
+                            android:id="@+id/multiply"
+                            android:layout_width="305dp"
+                            android:layout_height="51dp"
+                            android:layout_marginStart="9dp"
+                            android:text="Multiply"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.231"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.563" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    tools:visibility="gone">
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </TableLayout>
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
