@@ -33,13 +33,14 @@
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="504dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:rotation="0"
                         android:rotationX="0"
                         android:rotationY="0">
 
                         <TableLayout
+                            android:id="@+id/tableLayout"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -166,48 +167,28 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.563" />
+
+
+
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="133dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginEnd="190dp"
+                            android:layout_marginBottom="123dp"
+                            android:text="Switch"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/divide" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <TableLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:visibility="gone"
-                                    tools:visibility="gone">
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent" />
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent" />
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent" />
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent" />
-                                </TableLayout>
-
-                            </FrameLayout>
-                        </LinearLayout>
-                    </LinearLayout>
+                        android:orientation="vertical"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
